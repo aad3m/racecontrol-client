@@ -1,4 +1,4 @@
-from http import HttpClient
+from .http import HttpClient
 
 class JolpicaProvider:
     BASE_URL = "https://api.jolpica.com/ergast"
