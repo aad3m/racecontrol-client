@@ -1,0 +1,15 @@
+[project]
+name = "racecontrol"
+version = "1.0.0"
+description = "RaceControl F1 data client using Jolpica API."
+authors = [{name = "Ali Adem"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "pandas>=2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/aad3m/racecontrol-client"
+Source = "https://github.com/aad3m/racecontrol-client"
