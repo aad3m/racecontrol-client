@@ -1,6 +1,6 @@
 [project]
 name = "racecontrol"
-version = "1.0.1a1"
+version = "1.0.2"
 description = "RaceControl F1 data client using the Jolpica API."
 authors = [{name = "Ali Adem"}]
 readme = "README.md"
