@@ -1,7 +1,7 @@
 from .http import HttpClient
 
 class JolpicaProvider:
-    BASE_URL = "https://api.jolpica.com/ergast"
+    BASE_URL = "https://api.jolpica.com/v1/f1"
 
     def __init__(self):
         self.http = HttpClient(self.BASE_URL)
