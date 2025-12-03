@@ -1,5 +1,5 @@
 [project]
-name = "racecontrolClient"
+name = "RaceControlClient"
 version = "1.0.0"
 description = "Backend data & services for the RaceControl F1 dashboard"
 authors = [{ name = "Ali Adem" }]
@@ -14,3 +14,6 @@ dependencies = [
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["racecontrolClient"]
