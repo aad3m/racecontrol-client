@@ -1,13 +1,35 @@
-# 🏎️ RaceControl Client
+# racecontrol-client
 
-The official backend/data client powering the **RaceControl Core Dashboard**.
+Backend data and service layer for the RaceControl F1 dashboard.
 
-Supports:
-- Jolpica (Ergast-style) F1 API
-- Driver standings, schedule, results
-- Fantasy scoring utilities
-- Lightweight HTTP client with safe fallback behavior
+- Fetches live F1 data from the Jolpica (Ergast-compatible) API
+- Uses pandas for data manipulation
+- Exposes clean functions returning JSON-like `list[dict]` structures,
+  ready for any frontend (Streamlit, web, mobile, etc.)
 
-## Install
+Install locally:
+
 ```bash
-pip install git+https://github.com/aad3m/racecontrol-client.git@v1.0.0
+pip install -e .
+---
+
+### `racecontrol/__init__.py`
+
+```python
+from .data.client import (
+    get_completed_round,
+    get_schedule,
+    get_driver_standings,
+    get_constructor_standings,
+    get_all_results_up_to,
+    get_fantasy_scores,
+)
+
+__all__ = [
+    "get_completed_round",
+    "get_schedule",
+    "get_driver_standings",
+    "get_constructor_standings",
+    "get_all_results_up_to",
+    "get_fantasy_scores",
+]

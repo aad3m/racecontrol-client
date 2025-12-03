@@ -1,24 +1,16 @@
-[build-system]
-requires = ["setuptools>=61", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "racecontrol"
-version = "1.0.1"
-description = "RaceControl F1 data client using the Jolpica (Ergast-compatible) API."
-authors = [{name = "Ali Adem"}]
+name = "racecontrol-client"
+version = "1.0.0"
+description = "Backend data & services for the RaceControl F1 dashboard"
+authors = [{ name = "Ali Adem" }]
 readme = "README.md"
 requires-python = ">=3.10"
+
 dependencies = [
     "requests>=2.31",
     "pandas>=2.0",
-    "streamlit>=1.32"
 ]
 
-[tool.setuptools]
-packages = [
-    "racecontrol",
-    "racecontrol.utils",
-    "racecontrol.data",
-    "racecontrol.services",
-]
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
