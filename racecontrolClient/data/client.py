@@ -8,7 +8,7 @@ from racecontrolClient.services.results import (
     parse_driver_standings,
     parse_constructor_standings,
 )
-from racecontrol.services.fantasy import (
+from racecontrolClient.services.fantasy import (
     summarize_driver_form,
     compute_fantasy_score,
 )
