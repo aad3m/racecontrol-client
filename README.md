@@ -1,4 +1,5 @@
 # 🏎️ racecontrol-client  
+[![GitHub release](https://img.shields.io/github/v/release/aad3m/racecontrol-client?include_prereleases&style=for-the-badge)](https://github.com/aad3m/racecontrol-client/releases)
 ### A Lightweight, Modular Python Client Library for Data, Analytics, and Application Backends
 
 `racecontrol-client` is a clean, extensible Python package that provides the
