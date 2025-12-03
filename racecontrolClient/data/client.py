@@ -2,8 +2,8 @@ from typing import List, Dict
 
 import pandas as pd
 
-from racecontrol.data.provider_jolpica import JolpicaProvider
-from racecontrol.services.results import (
+from racecontrolClient.data.provider_jolpica import JolpicaProvider
+from racecontrolClient.services.results import (
     parse_schedule,
     parse_driver_standings,
     parse_constructor_standings,

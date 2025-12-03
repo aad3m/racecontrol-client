@@ -1,5 +1,5 @@
-from racecontrol.utils.config import ERGAST_BASE
-from racecontrol.utils.http import retry_get
+from racecontrolClient.utils.config import ERGAST_BASE
+from racecontrolClient.utils.http import retry_get
 
 def fetch_json(path: str) -> dict:
     url = f"{ERGAST_BASE}{path}"

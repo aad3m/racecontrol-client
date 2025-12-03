@@ -1,7 +1,7 @@
 import time
 import requests
 
-from racecontrol.utils.config import (
+from racecontrolClient.utils.config import (
     HTTP_TIMEOUT,
     HTTP_RETRIES,
     HTTP_BACKOFF,
