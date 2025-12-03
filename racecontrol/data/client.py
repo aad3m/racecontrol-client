@@ -97,3 +97,18 @@ class F1Client:
             return pd.DataFrame()
 
         return pd.concat(all_results, ignore_index=True)
+
+    # ----------------------------------------------------
+    # RESULTS (all rounds)
+    # ----------------------------------------------------
+    def get_all_results(self, season="current"):
+        """
+        Fetch results for every completed round in the given season.
+        """
+        schedule = self.get_schedule(season)
+
+        if schedule.empty:
+            return pd.DataFrame()
+
+        max_round = int(schedule["round"].max())
+        return self.get_results_up_to(season, max_round)
