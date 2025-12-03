@@ -1,0 +1,22 @@
+# JetBrains IDE
+.idea/
+
+# Python virtual envs
+.venv/
+venv/
+env/
+
+# Build artifacts
+__pycache__/
+*.pyc
+*.pyo
+build/
+dist/
+*.egg-info/
+
+# Streamlit cache
+.streamlit/
+
+# OS files
+.DS_Store
+Thumbs.db
