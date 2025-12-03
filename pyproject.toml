@@ -1,5 +1,5 @@
 [project]
-name = "racecontrol-client"
+name = "racecontrolClient"
 version = "1.0.0"
 description = "Backend data & services for the RaceControl F1 dashboard"
 authors = [{ name = "Ali Adem" }]
